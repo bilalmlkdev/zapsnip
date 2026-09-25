@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -49,6 +49,7 @@ const WIDTHS = [
 const norm = (a: number, b: number) => (a < b ? [a, b - a] : [b, a - b]);
 
 const Capture = () => {
+  const location = useLocation();
   const imgRef = useRef<HTMLImageElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const idRef = useRef(1);
@@ -93,7 +94,7 @@ const Capture = () => {
   }, []);
 
   const loadFile = useCallback(
-    (file: File) => {
+    (file: Blob) => {
       const url = URL.createObjectURL(file);
       const img = new Image();
       img.onload = () => {
@@ -138,6 +139,11 @@ const Capture = () => {
       setMsg("Capture cancelled or unavailable here. Paste or upload an image instead.");
     }
   };
+
+  useEffect(() => {
+    const blob = (location.state as { blob?: Blob } | null)?.blob;
+    if (blob) loadFile(blob);
+  }, [location.state, loadFile]);
 
   useEffect(() => {
     const onPaste = (e: ClipboardEvent) => {
