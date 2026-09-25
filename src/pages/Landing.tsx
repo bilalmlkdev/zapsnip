@@ -83,7 +83,7 @@ const faqs = [
     a: "In IndexedDB inside your browser profile, on your device only. Clearing the site's data removes them - export anything you want to keep.",
   },
   {
-    q: "Is Shotframe really free?",
+    q: "Is Zapsnip really free?",
     a: "Yes - free forever, no pro tier, no capture limits. It's a client-side tool with nothing to meter.",
   },
 ];
@@ -97,7 +97,7 @@ const HeroMock = () => (
         <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
         <span className="ml-2 flex items-center gap-1.5 rounded-full bg-background px-2.5 py-0.5 text-[10px] font-medium text-muted-foreground">
           <span className="h-1.5 w-1.5 rounded-full bg-danger animate-blink" />
-          shotframe - captured
+          zapsnip - captured
         </span>
       </div>
 

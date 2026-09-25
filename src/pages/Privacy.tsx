@@ -23,7 +23,7 @@ const Privacy = () => (
         <section>
           <h2 className="font-display text-lg font-semibold text-foreground">The short version</h2>
           <p className="mt-2">
-            Shotframe has no backend. Your screen, images, annotations, and saved shots never leave
+            Zapsnip has no backend. Your screen, images, annotations, and saved shots never leave
             your device. We literally have nowhere to send them.
           </p>
         </section>
@@ -60,7 +60,7 @@ const Privacy = () => (
           <p className="mt-2">
             Questions? Open an issue on{" "}
             <a
-              href="https://github.com/bilalmlkdev/shotframe"
+              href="https://github.com/bilalmlkdev/zapsnip"
               target="_blank"
               rel="noreferrer"
               className="font-medium text-foreground underline"

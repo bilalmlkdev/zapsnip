@@ -1,5 +1,8 @@
 {
-  "name": "shotframe",
+  "name": "zapsnip",
+  "description": "Client-side screenshot capture and annotation tool - everything stays in your browser",
+  "author": "Bilal Malik",
+  "license": "MIT",
   "private": true,
   "version": "0.0.0",
   "type": "module",

@@ -20,7 +20,7 @@ const Nav = () => {
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-foreground text-accent">
             <Logo size={17} />
           </span>
-          Shotframe
+          Zapsnip
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
@@ -41,7 +41,7 @@ const Nav = () => {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://github.com/bilalmlkdev/shotframe"
+            href="https://github.com/bilalmlkdev/zapsnip"
             target="_blank"
             rel="noreferrer"
             className="hidden h-9 w-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground sm:flex"

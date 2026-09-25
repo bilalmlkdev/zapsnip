@@ -1,32 +1,41 @@
-# React + TypeScript + Vite
+# Zapsnip
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Capture. Mark up. Ship it.**
 
-Currently, two official plugins are available:
+A screenshot tool that never phones home. Capture your screen, tab, or window, annotate it on a local canvas, and export - 100% client-side, with zero bytes uploaded.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Screen, tab, or window capture** via the browser's native `getDisplayMedia` API
+- **Paste & drag fallback** - works even where screen capture isn't supported
+- **Annotation toolkit** - arrows, rectangles, ellipses, freehand pen, text, and blur
+- **Undo/redo** - non-destructive editing throughout
+- **One-click export** - copy to clipboard or download PNG
+- **Local gallery** - saved shots live in IndexedDB on your device
+- **No accounts, no server, no analytics** - there is no backend to send anything to
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack
 
-## Expanding the Oxlint configuration
+React 19 · TypeScript · Vite · Tailwind CSS 4 · React Router 7 · lucide-react
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Develop
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Build
+
+```bash
+npm run build
+npm run lint
+```
+
+## Privacy
+
+Everything - screen streams, canvas pixels, gallery images - is processed and stored locally in your browser. See [Privacy](./src/pages/Privacy.tsx) for details.
+
+## License
+
+MIT

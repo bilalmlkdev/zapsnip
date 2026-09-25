@@ -30,7 +30,7 @@ const Footer = () => (
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-foreground text-accent">
               <Logo size={17} />
             </span>
-            Shotframe
+            Zapsnip
           </Link>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             Capture. Mark up. Ship it. A screenshot tool that never phones home - everything runs in
@@ -38,7 +38,7 @@ const Footer = () => (
           </p>
           <div className="mt-4 flex gap-2">
             <a
-              href="https://github.com/bilalmlkdev/shotframe"
+              href="https://github.com/bilalmlkdev/zapsnip"
               target="_blank"
               rel="noreferrer"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:text-foreground"
@@ -77,7 +77,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row">
-        <span>&copy; {new Date().getFullYear()} Shotframe. Free forever.</span>
+        <span>&copy; {new Date().getFullYear()} Zapsnip. Free forever.</span>
         <span>
           Built by{" "}
           <a
